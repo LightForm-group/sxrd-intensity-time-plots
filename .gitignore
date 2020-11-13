@@ -7,3 +7,5 @@ __pycache__/
 /analysis
 /data/MAUD
 
+/.idea
+/calibration/DLS_CeO2_1200mm_pyFAI.poni
