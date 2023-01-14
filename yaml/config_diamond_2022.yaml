@@ -1,0 +1,122 @@
+file_paths:
+    input_calibration_path: ../../SXRD_analysis/diamond_2022/calibration-pyFAI/diamond_2022_CeO2_pyFAI.poni
+    # Input file path for the .poni calibration file
+    
+    input_path: ../../SXRD_analysis/diamond_2022/
+    # Input file path for the diffraction pattern tiff images
+    
+    input_experiment_list:
+    - 006_Ti64_TIFUN-R2_RD_Deform_950C_1mms-1/tiff-images
+    - 014_Ti64_TIFUN-R1_RD_Deform_910C_0.1mms-1/tiff-images
+    - 018_Ti64_TIFUN-R1_RD_Deform_950C_0.1mms-1/tiff-images
+    - 038_Ti64_TIFUN-T4_TD_Deform_950C_0.1mms-1/tiff-images
+    - 006_Ti64_TIFUN-R2_RD_Deform_950C_1mms-1/111480/tiff-images
+    - 014_Ti64_TIFUN-R1_RD_Deform_910C_0.1mms-1/111525/tiff-images
+    - 018_Ti64_TIFUN-R1_RD_Deform_950C_0.1mms-1/111548/tiff-images
+    - 038_Ti64_TIFUN-T4_TD_Deform_950C_0.1mms-1/111698/tiff-images
+    # Input experiment list (name of input folders)
+    
+    output_path: ../../SXRD_results/diamond_2022/
+    # Output path for intensity-time plots
+    
+    output_experiment_list:
+    - experiment_006
+    - experiment_014
+    - experiment_018
+    - experiment_038
+    - experiment_111480
+    - experiment_111525
+    - experiment_111548
+    - experiment_111698
+    # Output experiment list (name of output folders)
+    
+user_inputs: 
+    lattice_planes:
+    - "10-10"
+    - "0002"
+    - "110"
+    - "10-11"
+    - "10-12"
+    - "200"
+    # list of the hkil or hkl indices of the lattice plane peak labels.
+
+    two_theta_min:
+    - [3.05, 3.30, 3.36, 3.47, 4.51, 4.77]
+    - [3.05, 3.31, 3.36, 3.47, 4.51, 4.77]
+    - [3.05, 3.31, 3.36, 3.47, 4.51, 4.76]
+    - [3.05, 3.31, 3.36, 3.47, 4.51, 4.76]
+    - [3.05, 3.30, 3.40, 3.48, 4.52, 4.76]
+    - [3.05, 3.30, 3.40, 3.48, 4.52, 4.76]
+    - [3.05, 3.30, 3.40, 3.48, 4.52, 4.76]
+    - [3.05, 3.30, 3.40, 3.48, 4.52, 4.76]
+    # list of the minimum two theta bounds for each lattice plane peak and each experiment
+
+    two_theta_max:
+    - [3.12, 3.34, 3.42, 3.53, 4.56, 4.83]
+    - [3.12, 3.34, 3.42, 3.53, 4.56, 4.83]
+    - [3.11, 3.34, 3.42, 3.53, 4.56, 4.83]
+    - [3.11, 3.34, 3.42, 3.53, 4.56, 4.83]
+    - [3.13, 3.35, 3.46, 3.58, 4.61, 4.92] 
+    - [3.13, 3.35, 3.46, 3.58, 4.61, 4.92]
+    - [3.13, 3.35, 3.46, 3.58, 4.61, 4.92]
+    - [3.13, 3.35, 3.46, 3.58, 4.61, 4.92]
+    # list of the maximum two theta bounds for each lattice plane peak and each experiment
+
+    v_max:
+    - [250, 300, 2000, 400, 100, 250]
+    - [300, 300, 2000, 1000, 100, 250]
+    - [200, 300, 2500, 500, 100, 250]
+    - [200, 300, 2500, 500, 100, 400]
+    - [35000, 40000, 35000, 110000, 15000, 20000]
+    - [50000, 55000, 40000, 130000, 20000, 20000]
+    - [40000, 45000, 40000, 120000, 20000, 15000]
+    - [40000, 55000, 40000, 120000, 20000, 20000]
+    # list of the colormap data range for intensity-time plot for each lattice plane peak
+
+    number_of_points:
+    - 10000
+    - 10000
+    - 10000
+    - 10000
+    - 10000
+    - 10000
+    - 10000
+    - 10000
+    # number of points in two-theta for the integration, 10000 gives best two-theta resolution, but 1000 is faster to run
+
+    number_of_cakes:
+    - 360
+    - 360
+    - 360
+    - 360
+    - 360
+    - 360
+    - 360
+    - 360
+    # number of azimuthal cakes, 360 gives 1 degree azimuthal resolution
+
+    image_step:
+    - 10
+    - 10
+    - 10
+    - 10
+    - 1
+    - 1
+    - 1
+    - 1
+    # image step to analyse the data
+
+    acquisition_frequency:
+    - 100
+    - 100
+    - 100
+    - 100
+    - 2
+    - 2
+    - 2
+    - 2
+    # acquisition frequency of the data collection (in Hz)
+
+
+
+

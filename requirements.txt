@@ -3,3 +3,5 @@ pyFAI
 xrdfit
 fabio
 numpy
+tqdm
+pyyaml
