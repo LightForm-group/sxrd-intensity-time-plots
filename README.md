@@ -66,13 +66,13 @@ pip list
 #tqdm
 #pyyaml
 ```
-**8. If all in step 7 are present, you can now run the example notebooks.
+**8. If all in step 7 are present, you can now run the notebook.
 Ensure the venv is active and use the following command to boot jupyter notebook (using all libraries installed in the venv)
 Warning - using just `jupyter notebook` without `python -m` can result in using your default python environment (the libraries may not be recognised):**
 ```unix
 python -m jupyter notebook
 ```
-**9. Work through the notebooks and setup yaml text files for reproducible intensity-time plots from multiple individual diffraction pattern rings across large synchrotron datasets.**
+**9. Work through the notebook and setup yaml text files for reproducible intensity-time plots from multiple individual diffraction pattern rings across large synchrotron datasets.**
 
 **10. When you're finished using the virtual environment, deactivate it!
 This will avoid confusion when using different python libraries that are not installed within the virtual environment:**
