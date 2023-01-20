@@ -1,5 +1,5 @@
 file_paths:
-    input_calibration_path: example_calibration/DLS_CeO2_1200mm.poni
+    input_calibration_path: example_calibration/diamond_2022_CeO2_pyFAI.poni
     # Input file path for the .poni calibration file
     
     input_path: example_data/
@@ -27,15 +27,15 @@ user_inputs:
     # list of the hkil or hkl indices of the lattice plane peak labels.
 
     two_theta_min:
-    - [3.10, 3.35, 3.36, 3.41, 4.58, 4.84]
+    - [3.05, 3.30, 3.40, 3.48, 4.52, 4.76]
     # list of the minimum two theta bounds for each lattice plane peak and each experiment
 
     two_theta_max:
-    - [3.14, 3.40, 3.40, 3.46, 4.62, 4.88]
+    - [3.13, 3.35, 3.46, 3.58, 4.61, 4.92] 
     # list of the maximum two theta bounds for each lattice plane peak and each experiment
 
     v_max:
-    - [250, 300, 2000, 400, 100, 250]
+    - [20000, 40000, 35000, 110000, 15000, 20000]
     # list of the colormap data range for intensity-time plot for each lattice plane peak
 
     number_of_points:
@@ -47,11 +47,11 @@ user_inputs:
     # number of azimuthal cakes, 360 gives 1 degree azimuthal resolution
 
     image_step:
-    - 10
+    - 1
     # image step to analyse the data
 
     acquisition_frequency:
-    - 10
+    - 100
     # acquisition frequency of the data collection (in Hz)
 
 

@@ -4,8 +4,6 @@
 __pycache__/
 .ipynb_checkpoints/
 /venv
-/analysis
-/data/MAUD
-
+/example_analysis/intensity-time-analysis/*.png
 /.idea
-/calibration/DLS_CeO2_1200mm_pyFAI.poni
+

@@ -1,6 +1,5 @@
 notebook
 pyFAI
-xrdfit
 fabio
 numpy
 tqdm
